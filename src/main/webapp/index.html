@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Shop and Storehouse</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+
+<body>
+
+<div class="header">
+    Fill the fields and click Add to add a new garment. Click on a garment's name to select it. Then you can move, update or delete it.
+</div>
+
+<form id="garmentForm">
+    <div class="leftArea">
+        <label>In Shop:</label>
+        <ul id="shopList"></ul>
+    </div>
+
+    <div class="mainArea">
+        <label>In Storehouse:</label>
+        <ul id="storehouseList"></ul>
+    </div>
+
+    <div class="rightArea">
+        <label>Id:</label>
+        <input id="garmentId" name="garmentId" type="number" disabled/>
+
+        <label>Size:</label>
+        <select id="size">
+            <option value="42">42</option>
+            <option value="44">44</option>
+            <option value="46">46</option>
+            <option value="48">48</option>
+            <option value="50">50</option>
+            <option value="52">52</option>
+            <option value="54">54</option>
+        </select>
+
+        <label>Price:</label>
+        <input type="text" id="price" name="price"/>
+
+        <label>Color:</label>
+        <select id="color">
+            <option value="white">white</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="black">black</option>
+        </select>
+
+        <label>Type:</label>
+        <select id="type">
+            <option value="dress">dress</option>
+            <option value="trousers">trousers</option>
+            <option value="skirt">skirt</option>
+            <option value="vest">vest</option>
+            <option value="shirt">shirt</option>
+        </select>
+
+        <label>Description:</label>
+        <input type="text" id="description" name="description"/>
+
+        <button id="btnAddToStorehouse">Add garment to storehouse</button>
+        <button id="btnAddToShop">Add garment to shop</button>
+        <button id="btnMoveToStorehouse">Move garment to storehouse</button>
+        <button id="btnMoveToShop">Move garment to shop</button>
+        <button id="btnSave">Update garment</button>
+        <button id="btnDelete">Delete garment</button>
+    </div>
+
+</form>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/functions.js"></script>
+
+</body>
+</html>
